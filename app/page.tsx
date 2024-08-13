@@ -9,6 +9,7 @@ import { db } from "@/lib/prisma"
 import BarbershopItem from "@/components/barbershop-item"
 import { quickSearchOptions } from "./_constants/search"
 import BookingItem from "@/components/booking-item"
+import Search from "@/components/search"
 
 export default async function Home() {
   const barbershops = await db.barbershop.findMany({})
@@ -27,11 +28,9 @@ export default async function Home() {
         <p>Segunda-feira, 12 de agosto.</p>
 
         {/* BUSCA */}
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Faça sua busca..." />
-          <Button>
-            <SearchIcon />
-          </Button>
+        <div className="mt-6">
+          {" "}
+          <Search />
         </div>
 
         {/* BUCA RÁPIDA */}
