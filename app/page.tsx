@@ -1,6 +1,6 @@
 import Header from "@/components/header"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+
 import { Input } from "@/components/ui/input"
 import { SearchIcon } from "lucide-react"
 import Image from "next/image"
@@ -85,18 +85,6 @@ export default async function Home() {
           ))}
         </div>
       </div>
-
-      {/* RODAPE */}
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-6">
-            <p className="text-sm text-gray-400">
-              &copy; 2024 Copyright{" "}
-              <span className="font-bold">FSW Barber</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </>
   )
 }
