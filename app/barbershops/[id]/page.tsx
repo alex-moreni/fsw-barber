@@ -92,7 +92,11 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
         </h2>
         <div className="grid-cols-2 gap-3 space-y-3 md:grid">
           {barbershop.services.map((service) => (
-            <ServiceItem key={service.id} service={service} />
+            <ServiceItem
+              key={service.id}
+              service={service}
+              barbershop={barbershop}
+            />
           ))}
         </div>
       </div>
