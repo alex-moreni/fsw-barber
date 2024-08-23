@@ -47,3 +47,10 @@
     @apply h-full bg-background text-foreground;
   }
 }
+
+@media (min-width: 1024px) {
+  .custom-scrollbar {
+    scrollbar-width: 60px;
+    scrollbar-color: #6c53d2 #2c2c2c;
+  }
+}
